@@ -1,0 +1,52 @@
+{
+  "common": {
+    "appName": "IgniteForge",
+    "slogan": "Ignite your ideas. Create beautiful apps instantly.",
+    "getStarted": "Get Started",
+    "browseTemplates": "Browse Templates",
+    "dashboard": "Dashboard",
+    "templates": "Templates",
+    "features": "Features",
+    "documentation": "Documentation",
+    "blog": "Blog",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "hero": {
+    "badge": "AI-Powered App Builder",
+    "title": "Ignite your ideas.",
+    "titleHighlight": "Create beautiful apps",
+    "subtitle": "Transform your description into full-featured, production-ready applications in minutes. No expensive tokens, no ugly design, no coding required.",
+    "ctaPrimary": "Get Started Free",
+    "ctaSecondary": "Browse Templates"
+  },
+  "features": {
+    "title": "Everything you need to build",
+    "subtitle": "Powerful features that make app creation effortless",
+    "lightningFast": {
+      "title": "Lightning Fast",
+      "description": "Generate complete apps in seconds with AI-powered code generation"
+    },
+    "bilingual": {
+      "title": "Bilingual AI",
+      "description": "Optimized for English and Russian prompts. Build in your language"
+    },
+    "beautifulUI": {
+      "title": "Beautiful UI",
+      "description": "Automatically enhanced with Tailwind CSS, Shadcn/UI, and animations"
+    },
+    "freeUnlimited": {
+      "title": "Free & Unlimited",
+      "description": "No token limits. Use Groq API free tier or local Ollama models"
+    }
+  },
+  "footer": {
+    "description": "Ignite your ideas. Create beautiful apps instantly.",
+    "product": "Product",
+    "resources": "Resources",
+    "legal": "Legal",
+    "copyright": "All rights reserved."
+  }
+}
+

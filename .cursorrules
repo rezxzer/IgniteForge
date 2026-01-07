@@ -1,0 +1,142 @@
+# IgniteForge Project Rules
+
+## Language Rules
+
+### Chat Responses
+- **ALWAYS respond in Georgian (ქართული)** when explaining, describing, or communicating with the user
+- All explanations, descriptions, and conversational text must be in Georgian
+- Code comments and documentation can be in English
+
+### Code Writing
+- **NEVER use Georgian characters (ა-ჰ) in code**
+- All code, variable names, function names, class names, file names, and strings must use only English characters
+- Comments in code should be in English
+- Error messages in code should be in English
+
+### Database & Supabase
+- **All Supabase-related code must be in English and consistent**
+- Table names: use English, snake_case (e.g., `user_profiles`, `projects`)
+- Column names: use English, snake_case (e.g., `created_at`, `user_id`)
+- Function names: use English, snake_case (e.g., `get_user_projects`)
+- SQL queries: all in English
+- RLS policies: names and descriptions in English
+- Migration files: all content in English
+
+## Code Standards
+
+### TypeScript/JavaScript
+- Use TypeScript strict mode
+- Follow Next.js 15 App Router conventions
+- Use functional components with hooks
+- Prefer async/await over promises
+- Use proper error handling with try/catch
+
+### File Naming
+- Components: PascalCase (e.g., `ProjectCard.tsx`)
+- Utilities: camelCase (e.g., `formatDate.ts`)
+- Constants: UPPER_SNAKE_CASE (e.g., `API_ENDPOINTS.ts`)
+- Files: kebab-case for routes, PascalCase for components
+
+### Code Organization
+- Keep components small and focused
+- Use custom hooks for reusable logic
+- Separate concerns (UI, logic, data fetching)
+- Use proper TypeScript types and interfaces
+
+## Project Structure
+
+```
+src/
+├── app/              # Next.js App Router pages
+├── components/        # React components
+├── lib/              # Utilities and helpers
+├── hooks/            # Custom React hooks
+├── types/            # TypeScript type definitions
+├── constants/        # Constants and configs
+└── styles/           # Global styles
+```
+
+## Best Practices
+
+### Error Handling
+- Always use try/catch for async operations
+- Provide meaningful error messages (in English for code, Georgian for user-facing)
+- Use toast notifications for user feedback
+- Log errors appropriately
+
+### State Management
+- Use React hooks (useState, useEffect) for local state
+- Use Server Components when possible
+- Use Server Actions for mutations
+- Consider Zustand or Context API for global state if needed
+
+### API Integration
+- Use Next.js API routes for backend logic
+- Keep API routes clean and focused
+- Use proper HTTP status codes
+- Validate input with Zod schemas
+
+### Database
+- Always use parameterized queries
+- Implement proper RLS policies
+- Use transactions when needed
+- Handle connection errors gracefully
+
+## Git & Commits
+
+### Commit Messages
+- Write commit messages in English
+- Use conventional commit format: `type(scope): description`
+- Examples:
+  - `feat(auth): add Google OAuth login`
+  - `fix(editor): resolve Monaco Editor loading issue`
+  - `docs(readme): update installation instructions`
+
+### Branch Naming
+- Use English: `feature/`, `fix/`, `refactor/`, `docs/`
+- Examples: `feature/editor-preview`, `fix/auth-redirect`
+
+## Testing
+
+- Write tests in English
+- Use descriptive test names
+- Test both success and error cases
+- Keep tests simple and focused
+
+## Documentation
+
+- Code documentation: English
+- User-facing documentation: Georgian
+- API documentation: English
+- README files: Can be bilingual (English primary, Georgian secondary)
+
+## AI Integration
+
+### Groq API
+- Use Llama 3.1 model
+- Keep prompts clear and specific
+- Handle rate limits gracefully
+- Cache responses when appropriate
+
+### Code Generation
+- Generate clean, production-ready code
+- Include proper error handling
+- Add TypeScript types
+- Follow project conventions
+
+## Security
+
+- Never commit API keys or secrets
+- Use environment variables
+- Validate all user input
+- Implement proper authentication
+- Use RLS policies in Supabase
+
+## Performance
+
+- Optimize images and assets
+- Use Next.js Image component
+- Implement proper loading states
+- Lazy load components when appropriate
+- Cache API responses when possible
+
